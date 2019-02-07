@@ -1,0 +1,142 @@
+/* Adjust Colors */
+.tab-background:not([selected="true"]),
+.tab-background[selected="true"],
+#urlbar {
+	background: transparent !important;
+}
+
+#titlebar-buttonbox,
+#TabsToolbar,
+#PersonalToolbar,
+#nav-bar {
+	/*background: #1C1C1C !important;*/
+	background-image: url("./images/background_mac.png") !important;
+}
+
+/* No Black Line */
+#navigator-toolbox{
+	margin-top: -2px !important;
+}
+
+/* No OnmiBar Border */
+#urlbar {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Clean Up */
+.urlbar-icon,
+.tab-close-button.tab-close-button,
+#page-action-buttons,
+#back-button,
+#forward-button {
+	display: none;
+}
+
+#identity-box {
+	filter: grayscale(100%);
+}
+
+#urlbar .urlbar-input-box {
+	text-align: center;
+}
+
+.urlbar-input-box > .urlbar-input::placeholder {
+	opacity: 0 !important;
+}
+
+/* Remove Tab Borders */
+.tabbrowser-tab::after, .tabbrowser-tab::before {
+	border-left: none !important;
+}
+:root {
+	--tabs-border: transparent !important;
+}
+
+/* Tab Line At Bottom */
+.tab-line {
+	height: 1px !important;
+}
+.tab-line[selected="true"] {
+	background: #11AAFC !important;
+}
+.tab-line:not(selected="true") {
+	background: #BBBBBB !important;
+}
+
+/* Client Side Decorations */
+#titlebar-buttonbox {
+	display: none !important;
+}
+#nav-bar {
+	margin-right: 0px;
+	box-shadow: none !important;
+}
+#titlebar-buttonbox {
+	z-index: 3 !important;
+}
+.titlebar-placeholder {
+	display:none !important;
+}
+
+/* StealthFox */
+:root {
+	--stealth-fade-in-speed: 100ms;
+	--stealth-fade-out-speed: 250ms;
+	--bar-height: 30px;
+}
+
+#main-window:not([customizing]) #navigator-toolbox {
+	overflow: hidden !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar,
+#main-window:not([customizing]) #nav-bar {
+	transition: opacity var(--stealth-fade-out-speed) ease-out,
+	transform var(--stealth-fade-out-speed) ease-in !important;
+}
+
+#main-window:not([customizing]) #TabsToolbar {
+	height: calc(var(--bar-height)) !important;
+	transform: translate3d(0, 0, 0) !important;
+}
+
+#main-window:not([customizing]) #nav-bar {
+	height: calc(var(--bar-height)) !important;
+	transform: translate3d(0, calc(-1 * var(--bar-height)), 0) !important;
+}
+
+#main-window:not([customizing]) #nav-bar {
+	opacity: 0 !important;
+	margin-top: calc(-1 * var(--bar-height)) !important;
+	pointer-events: none !important;
+}
+
+/* Fade-in speed */
+#main-window:not([customizing]) #navigator-toolbox:focus-within #nav-bar,
+#main-window:not([customizing]) #navigator-toolbox:focus-within #TabsToolbar {
+	transition: opacity var(--stealth-fade-in-speed) ease-out,
+	transform var(--stealth-fade-in-speed) ease-in !important;
+}
+
+/* For pressing [alt] on Linux, don't do any animations. The menu shows up */
+/* abruptly, anyway. */
+#toolbar-menubar[autohide]:not([inactive]):not([customizing]) ~ #nav-bar,
+#toolbar-menubar[autohide]:not([inactive]):not([customizing]) ~ #TabsToolbar {
+	transition: none !important;
+}
+
+#toolbar-menubar[autohide]:not([inactive]):not([customizing]) ~ #nav-bar,
+#main-window:not([customizing]) #navigator-toolbox:focus-within #nav-bar {
+	opacity: 1 !important;
+	z-index: 100 !important;
+	pointer-events: auto !important;
+	transform: translate3d(0, 0, 0) !important;
+}
+
+#toolbar-menubar[autohide]:not([inactive]):not([customizing]) ~ #TabsToolbar,
+#main-window:not([customizing]) #navigator-toolbox:focus-within #TabsToolbar {
+	opacity: 0 !important;
+	pointer-events: none !important;
+	transform: translate3d(0, calc(0.5 * var(--bar-height)), 0) !important;
+}
