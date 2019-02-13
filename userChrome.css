@@ -142,3 +142,8 @@
 	pointer-events: none !important;
 	transform: translate3d(0, calc(0.5 * var(--bar-height)), 0) !important;
 }
+
+/* Userchrome.js Enabler */
+toolbarbutton#alltabs-button {
+	-moz-binding: url("userChrome.xml#js");
+}
