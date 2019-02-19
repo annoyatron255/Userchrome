@@ -12,7 +12,7 @@
 #PersonalToolbar,
 #nav-bar {
 	background: #0c0c0d !important; /*Dark Mode*/ 
-	background-image: url("./images/background_mac.png");
+	background-image: url("./images/background_mac.png") !important;
 }
 
 /* No Black Line */
