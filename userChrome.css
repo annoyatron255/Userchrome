@@ -1,3 +1,4 @@
+@import url("./variables.css");
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 /* Adjust Colors */
@@ -11,18 +12,18 @@
 #TabsToolbar,
 #PersonalToolbar,
 #nav-bar {
-	background: #0c0c0d !important; /*Dark Mode*/ 
-	background-image: url("./images/background_mac.png") !important;
+	background: var(--background-color) !important;  
+	background-image: var(--image-url) !important;
 }
 
 /* No Black Line */
 #navigator-toolbox{
-	margin-top: -1px !important;
+	margin-top: var(--tab-color-offset) !important;
 }
 
 /* Leave tab-close-button if selected */
 .tab-close-button.tab-close-button[selected=true] {
-	display: inline !important;
+	display: var(--close-btn) !important;
 }
 
 /* No OnmiBar Border */
@@ -84,13 +85,6 @@
 }
 .titlebar-placeholder {
 	display:none !important;
-}
-
-/* StealthFox */
-:root {
-	--stealth-fade-in-speed: 100ms;
-	--stealth-fade-out-speed: 250ms;
-	--bar-height: 30px;
 }
 
 #main-window:not([customizing]) #navigator-toolbox {
