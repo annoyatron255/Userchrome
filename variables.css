@@ -1,0 +1,26 @@
+/*Specific User Variables*/
+/*Hopefully we can automate these*/
+/*Only commit this if you have another variable to add*/
+
+:root {
+	/* This defines the size of the blue highlight on the tabs. */
+	/* It differs for no reason depending on OS/setup */
+	--tab-color-offset: -2px; /* Default: -1px */
+
+	/* Show tab close button */
+	/* inline or none */
+	--close-btn: inline;
+	
+	/* Path to the background image */
+	--image-url: url("images/background_mac.png");
+	
+	/* Background color */
+	--background-color: #0c0c0d; /*Dark mode*/
+	
+	/* Animation speeds */
+	--stealth-fade-in-speed: 100ms;
+	--stealth-fade-out-speed: 250ms;
+
+	/* Bar height */
+	--bar-height: 30px;
+}
