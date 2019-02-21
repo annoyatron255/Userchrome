@@ -22,7 +22,7 @@
 }
 
 /* Leave tab-close-button if selected */
-.tab-close-button.tab-close-button[selected=true] {
+.tab-close-button.tab-close-button[selected=true]:not([pinned="true"]) {
 	display: var(--close-btn) !important;
 }
 
