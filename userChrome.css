@@ -21,6 +21,10 @@
 	margin-top: var(--tab-color-offset) !important;
 }
 
+#navigator-toolbox{
+	border-bottom: 0px !important;
+}
+
 /* Leave tab-close-button if selected */
 .tab-close-button.tab-close-button[selected=true]:not([pinned="true"]) {
 	display: var(--close-btn) !important;
@@ -70,6 +74,12 @@
 }
 .tab-line:not(selected="true") {
 	background: #BBBBBB !important;
+}
+
+/* Remove Overflow Shadow */
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator,
+.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator {
+	opacity: 0 !important;
 }
 
 /* Client Side Decorations */

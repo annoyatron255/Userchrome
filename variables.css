@@ -12,10 +12,10 @@
 	--close-btn: inline;
 	
 	/* Path to the background image */
-	--image-url: url("images/background_mac.png");
+	/*--image-url: url("images/background_mac.png");*/
 	
 	/* Background color */
-	--background-color: #0c0c0d; /*Dark mode*/
+	--background-color: #010101; /*Dark mode*/
 	
 	/* Animation speeds */
 	--stealth-fade-in-speed: 100ms;
