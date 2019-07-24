@@ -11,3 +11,13 @@
 		scrollbar-width: none !important;
 	}
 }
+
+/* Transparent Theme for Dark Mode YouTube */
+@-moz-document domain(youtube.com) {
+	html:not(.style-scope)[dark],
+	:not(.style-scope)[dark] {
+		--yt-app-background: var(--background-color) !important;
+		--yt-main-app-background: var(--background-color) !important;
+		--yt-main-app-background-tmp: var(--background-color) !important;
+	}
+}
