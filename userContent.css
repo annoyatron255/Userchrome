@@ -12,6 +12,24 @@
 	}
 }
 
+@-moz-document url(about:privatebrowsing) {
+	.showPrivate {
+		display: none !important;
+	}
+
+	html.private {
+		--in-content-page-background: var(--background-color) !important;
+	}
+
+	:root {
+		scrollbar-width: none !important;
+	}
+}
+
+#viewer, .pdfViewer {
+	background-color: var(--background-color) !important;
+}
+
 /* Transparent Theme for Dark Mode YouTube */
 @-moz-document domain(youtube.com) {
 	html:not(.style-scope)[dark],
@@ -20,5 +38,14 @@
 		--yt-main-app-background: var(--background-color) !important;
 		--yt-main-app-background-tmp: var(--background-color) !important;
 		--yt-guide-background: var(--background-color) !important;
+	}
+}
+
+@-moz-document domain(github.com) {
+	html, iframe, img, video, *[style*="url"] {
+		filter: invert(1) hue-rotate(180deg)/* brightness(105%) contrast(105%) */!important;
+	}
+	body {
+		background-color: var(--background-color) !important;
 	}
 }

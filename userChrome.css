@@ -1,5 +1,5 @@
 @import url("./variables.css");
-@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/*@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);*/
 
 /* Adjust Colors */
 .tab-background:not([selected="true"]),
@@ -49,8 +49,8 @@
 	filter: grayscale(100%);
 }
 
-#urlbar .urlbar-input-box {
-	text-align: center;
+#urlbar-input {
+	text-align: center !important;
 }
 
 .urlbar-input-box > .urlbar-input::placeholder {
@@ -98,7 +98,7 @@
 }
 
 #main-window:not([customizing]) #navigator-toolbox {
-	overflow: hidden !important;
+	/*overflow: hidden !important;*/
 }
 
 #main-window:not([customizing]) #TabsToolbar,
