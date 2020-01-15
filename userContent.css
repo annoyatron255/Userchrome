@@ -37,6 +37,12 @@
 	:not(.style-scope)[dark] {
 		--yt-spec-general-background-a: var(--background-color) !important;
 		--yt-spec-general-background-b: var(--background-color) !important;
+		--yt-spec-general-background-c: var(--background-color) !important;
+		--yt-spec-brand-background-solid: var(--background-color) !important;
+		--yt-spec-brand-background-primary: var(--background-color) !important;
+		--yt-spec-brand-background-secondary: var(--background-color) !important;
+		--yt-searchbox-background: var(--background-color) !important;
+		--ytd-searchbox-legacy-button-color: var(--background-color) !important;
 	}
 
 	:root {
