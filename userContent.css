@@ -33,13 +33,10 @@
 
 /* Transparent Theme for Dark Mode YouTube */
 @-moz-document domain(youtube.com) {
-	html:not(.style-scope),
-	:not(.style-scope) {
-		--yt-app-background: var(--background-color) !important;
-		--yt-main-app-background: var(--background-color) !important;
-		--yt-main-app-background-tmp: var(--background-color) !important;
-		--yt-guide-background: var(--background-color) !important;
+	html:not(.style-scope)[dark],
+	:not(.style-scope)[dark] {
 		--yt-spec-general-background-a: var(--background-color) !important;
+		--yt-spec-general-background-b: var(--background-color) !important;
 	}
 
 	:root {
