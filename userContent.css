@@ -43,6 +43,7 @@
 		--yt-spec-brand-background-secondary: var(--background-color) !important;
 		--yt-searchbox-background: var(--background-color) !important;
 		--ytd-searchbox-legacy-button-color: var(--background-color) !important;
+		--yt-app-background: var(--background-color) !important;
 	}
 
 	:root {
