@@ -7,6 +7,16 @@
 #urlbar {
 	background: transparent !important;
 }
+#urlbar-background {
+	--lwt-accent-color: var(--background-color) !important;
+	--arrowpanel-background: var(--background-color) !important;
+	--arrowpanel-border-color: var(--background-color) !important;
+	--lwt-toolbar-field-background-color: var(--background-color) !important;
+	--lwt-toolbar-field-focus: var(--background-color) !important;
+	--toolbar-bgcolor: var(--background-color) !important;
+	--urlbar-separator-color: var(--background-color) !important;
+	--chrome-content-separator: var(--background-color) !important;
+}
 
 #titlebar-buttonbox,
 #TabsToolbar,
