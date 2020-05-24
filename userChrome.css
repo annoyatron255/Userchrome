@@ -4,8 +4,8 @@
 /* Adjust Colors */
 .tab-background:not([selected="true"]),
 .tab-background[selected="true"],
-#urlbar {
-	background: transparent !important;
+#urlbar-background {
+	background: var(--background-color) !important;
 }
 
 #titlebar-buttonbox,
@@ -30,8 +30,13 @@
 	display: var(--close-btn) !important;
 }
 
-/* No OnmiBar Border */
+/* Correct megabar size */
 #urlbar {
+	--urlbar-toolbar-height: calc(var(--bar-height) - 2px) !important;
+}
+
+/* No OnmiBar Border */
+#urlbar-background {
 	border: none !important;
 	box-shadow: none !important;
 }
