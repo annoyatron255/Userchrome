@@ -5,6 +5,10 @@
 .tab-background:not([selected="true"]),
 .tab-background[selected="true"],
 #urlbar-background {
+	background: transparent !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-background {
 	background: var(--background-color) !important;
 }
 
@@ -12,16 +16,17 @@
 #TabsToolbar,
 #PersonalToolbar,
 #nav-bar {
-	background: var(--background-color) !important;  
+	background: transparent !important;
 	background-image: var(--image-url) !important;
 }
 
-/* No Black Line */
-#navigator-toolbox{
-	margin-top: var(--tab-color-offset) !important;
+#navigator-toolbox {
+	background: var(--background-color) !important;
 }
 
-#navigator-toolbox{
+/* No Black Line */
+#navigator-toolbox {
+	margin-top: var(--tab-color-offset) !important;
 	border-bottom: 0px !important;
 }
 
@@ -31,8 +36,23 @@
 }
 
 /* Correct megabar size */
-#urlbar {
-	--urlbar-toolbar-height: calc(var(--bar-height) - 2px) !important;
+#urlbar[breakout][breakout-extend] {
+	top: 3px !important;
+	left: 0px !important;
+	width: 100% !important;
+	padding: 0px !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+	height: var(--urlbar-height) !important;
+	padding: 0 !important;
+}
+
+/* Remove megabar roundness */
+#urlbar #urlbar-background,
+#urlbar, #urlbar-input-container,
+#searchbar, .searchbar-textbox {
+	border-radius: 0px !important;
 }
 
 /* No OnmiBar Border */
@@ -82,8 +102,8 @@
 }
 
 /* Remove Overflow Shadow */
-.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-start-indicator,
-.tabbrowser-arrowscrollbox > .arrowscrollbox-overflow-end-indicator {
+spacer[part=overflow-start-indicator],
+spacer[part=overflow-end-indicator] {
 	opacity: 0 !important;
 }
 
@@ -133,13 +153,6 @@
 #main-window:not([customizing]) #navigator-toolbox:focus-within #TabsToolbar {
 	transition: opacity var(--stealth-fade-in-speed) ease-in,
 	transform var(--stealth-fade-in-speed) ease-in !important;
-}
-
-/* For pressing [alt] on Linux, don't do any animations. The menu shows up */
-/* abruptly, anyway. */
-#toolbar-menubar[autohide]:not([inactive]):not([customizing]) ~ #nav-bar,
-#toolbar-menubar[autohide]:not([inactive]):not([customizing]) ~ #TabsToolbar {
-	transition: none !important;
 }
 
 #toolbar-menubar[autohide]:not([inactive]):not([customizing]) ~ #nav-bar,
