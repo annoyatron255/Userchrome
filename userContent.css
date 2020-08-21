@@ -1,7 +1,7 @@
 @import url("./variables.css");
 @-moz-document url(about:blank), url(about:newtab), url(about:home) {
 	html:not(#ublock0-epicker), html:not(#ublock0-epicker) body, #newtab-customize-overlay {
-		background: var(--background-color) !important;
+		background: var(--key-color) !important;
 	}
 
 	.icon-settings {
@@ -19,7 +19,7 @@
 	}
 
 	html.private {
-		--in-content-page-background: var(--background-color) !important;
+		--in-content-page-background: var(--key-color) !important;
 	}
 
 	:root {
@@ -28,27 +28,27 @@
 }
 
 #viewer, .pdfViewer {
-	background-color: var(--background-color) !important;
+	background-color: var(--key-color) !important;
 }
 
 /* Transparent Theme for Dark Mode YouTube */
 @-moz-document domain(youtube.com) {
 	html:not(.style-scope)[dark],
 	:not(.style-scope)[dark] {
-		--yt-spec-general-background-a: var(--background-color) !important;
-		--yt-spec-general-background-b: var(--background-color) !important;
-		--yt-spec-general-background-c: var(--background-color) !important;
-		--yt-spec-brand-background-solid: var(--background-color) !important;
-		--yt-spec-brand-background-primary: var(--background-color) !important;
-		--yt-spec-brand-background-secondary: var(--background-color) !important;
-		--yt-searchbox-background: var(--background-color) !important;
-		--ytd-searchbox-legacy-button-color: var(--background-color) !important;
-		--yt-app-background: var(--background-color) !important;
+		--yt-spec-general-background-a: var(--key-color) !important;
+		--yt-spec-general-background-b: var(--key-color) !important;
+		--yt-spec-general-background-c: var(--key-color) !important;
+		--yt-spec-brand-background-solid: var(--key-color) !important;
+		--yt-spec-brand-background-primary: var(--key-color) !important;
+		--yt-spec-brand-background-secondary: var(--key-color) !important;
+		--yt-searchbox-background: var(--key-color) !important;
+		--ytd-searchbox-legacy-button-color: var(--key-color) !important;
+		--yt-app-background: var(--key-color) !important;
 	}
 
 	:root {
 		scrollbar-width: thin !important;
-		scrollbar-color: #272727 var(--background-color) !important;
+		scrollbar-color: #272727 var(--key-color) !important;
 	}
 }
 
@@ -57,6 +57,6 @@
 		filter: invert(1) hue-rotate(180deg)/* brightness(105%) contrast(105%) */!important;
 	}
 	body {
-		background-color: var(--background-color) !important;
+		background-color: var(--key-color) !important;
 	}
 }

@@ -1,5 +1,4 @@
 @import url("./variables.css");
-/*@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);*/
 
 /* Adjust Colors */
 .tab-background:not([selected="true"]),
@@ -9,7 +8,9 @@
 }
 
 #urlbar[breakout][breakout-extend] > #urlbar-background {
-	background: var(--background-color) !important;
+	background: linear-gradient(180deg,
+		transparent calc(var(--urlbar-height) + 1px),
+		var(--background-color) 0) !important;
 }
 
 #titlebar-buttonbox,
@@ -17,7 +18,6 @@
 #PersonalToolbar,
 #nav-bar {
 	background: transparent !important;
-	background-image: var(--image-url) !important;
 }
 
 #navigator-toolbox {
@@ -170,7 +170,8 @@ spacer[part=overflow-end-indicator] {
 	transform: translate3d(0, calc(0.5 * var(--bar-height)), 0) !important;
 }
 
-/* Userchrome.js Enabler */
-toolbarbutton#alltabs-button {
-	-moz-binding: url("userChrome.xml#js");
+/* Transparency */
+#main-window {
+	background: transparent !important;
+	-moz-appearance: -moz-win-glass !important;
 }

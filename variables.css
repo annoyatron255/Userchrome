@@ -9,13 +9,16 @@
 
 	/* Show tab close button */
 	/* inline or none */
-	--close-btn: inline;
+	--close-btn: none;
 	
 	/* Path to the background image */
 	/*--image-url: url("images/background_mac.png");*/
 	
 	/* Background color */
-	--background-color: #000100; /*Dark mode*/
+	--background-color: #000000E3;
+
+	/* Transparency key color */
+	--key-color: #000100;
 	
 	/* Animation speeds */
 	--stealth-fade-in-speed: 100ms;
