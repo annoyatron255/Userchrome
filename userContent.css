@@ -14,7 +14,7 @@
 }
 
 @-moz-document url(about:privatebrowsing) {
-	.showPrivate {
+	.showPrivate, .vpn-promo {
 		display: none !important;
 	}
 
@@ -49,14 +49,5 @@
 	:root {
 		scrollbar-width: thin !important;
 		scrollbar-color: #272727 var(--key-color) !important;
-	}
-}
-
-@-moz-document domain(github.com) {
-	html, iframe, img, video, *[style*="url"] {
-		filter: invert(1) hue-rotate(180deg)/* brightness(105%) contrast(105%) */!important;
-	}
-	body {
-		background-color: var(--key-color) !important;
 	}
 }
