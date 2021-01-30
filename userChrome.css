@@ -10,7 +10,7 @@
 #urlbar[breakout][breakout-extend] > #urlbar-background {
 	background: linear-gradient(180deg,
 		transparent calc(var(--urlbar-height) + 1px),
-		var(--background-color) 0) !important;
+		var(--key-color) 0) !important;
 }
 
 #titlebar-buttonbox,
@@ -171,7 +171,14 @@ spacer[part=overflow-end-indicator] {
 }
 
 /* Transparency */
-#main-window {
+window,
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#PersonalToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar {
 	background: transparent !important;
-	-moz-appearance: -moz-win-glass !important;
+	-moz-appearance: none !important;
 }
