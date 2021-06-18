@@ -8,6 +8,10 @@
 		display: none !important;
 	}
 
+	.personalize-button {
+		display: none !important;
+	}
+
 	:root {
 		scrollbar-width: none !important;
 	}
