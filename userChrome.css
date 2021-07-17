@@ -179,6 +179,6 @@ window,
 #navigator-toolbox,
 #sidebar-box,
 #nav-bar {
-	background: transparent !important;
-	-moz-appearance: none !important;
+	background: var(--key-color) !important;
+	/*-moz-appearance: none !important;*/
 }
