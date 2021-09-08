@@ -90,17 +90,6 @@
 	--tabs-border: transparent !important;
 }
 
-/* Tab Line At Bottom */
-.tab-line {
-	height: 1px !important;
-}
-.tab-line[selected="true"] {
-	background: #11AAFC !important;
-}
-.tab-line:not(selected="true") {
-	background: #BBBBBB !important;
-}
-
 /* Remove Overflow Shadow */
 spacer[part=overflow-start-indicator],
 spacer[part=overflow-end-indicator] {
@@ -168,6 +157,31 @@ spacer[part=overflow-end-indicator] {
 	opacity: 0 !important;
 	pointer-events: none !important;
 	transform: translate3d(0, calc(0.5 * var(--bar-height)), 0) !important;
+}
+
+/* Tab line */
+.tabbrowser-tab[selected=true] > .tab-stack > .tab-background > .tab-context-line {
+	background-color: #11AAFC !important;
+}
+
+.tabbrowser-tab:not([selected]):hover > .tab-stack > .tab-background > .tab-context-line {
+	background-color: #777777 !important;
+}
+
+.tabbrowser-tab > .tab-stack > .tab-background > .tab-context-line {
+	height: 1px !important;
+	margin-top: 0.5px !important;
+}
+
+/* Remove padding */
+.tab-background {
+    border-radius: 0px 0px 0px 0px !important;
+    margin-block: 1px 0 !important;
+}
+
+.tabbrowser-tab {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 /* Transparency */
