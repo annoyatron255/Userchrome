@@ -56,9 +56,10 @@
 }
 
 /* No OnmiBar Border */
-#urlbar-background {
+#urlbar[focused="true"] > #urlbar-background {
 	border: none !important;
 	box-shadow: none !important;
+	outline: none !important;
 }
 
 /* Clean Up */
