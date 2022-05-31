@@ -162,11 +162,11 @@ spacer[part=overflow-end-indicator] {
 
 /* Tab line */
 .tabbrowser-tab[selected=true] > .tab-stack > .tab-background > .tab-context-line {
-	background-color: #11AAFC !important;
+	background: linear-gradient(to right, #11AAFC, #11AAFC 50%, var(--identity-icon-color, #11AAFC) 50%, var(--identity-icon-color, #11AAFC)) !important;
 }
 
 .tabbrowser-tab:not([selected]):hover > .tab-stack > .tab-background > .tab-context-line {
-	background-color: #777777 !important;
+	background: linear-gradient(to right, #777777, #777777 50%, var(--identity-icon-color, #777777) 50%, var(--identity-icon-color, #777777)) !important;
 }
 
 .tabbrowser-tab > .tab-stack > .tab-background > .tab-context-line {
