@@ -28,6 +28,7 @@
 #navigator-toolbox {
 	margin-top: var(--tab-color-offset) !important;
 	border-bottom: 0px !important;
+	height: var(--bar-height) !important;
 }
 
 /* Leave tab-close-button if selected */
